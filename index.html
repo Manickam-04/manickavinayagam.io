@@ -1,0 +1,734 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Manicka Vinayagam - Personal Developer Portfolio. Shaping the future with AI/ML and modern web systems." />
+    <title>Manickam | Portfolio</title>
+    
+    <!-- CSS Stylesheets -->
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="img/MV logo.jpg">
+</head>
+
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="#home" class="logo">
+                <img src="img/MV logo.jpg" alt="Manick logo">
+                <span>Manick.Dev</span>
+            </a>
+            
+            <div class="navbar-right">
+                <ul class="nav-links" id="nav-links-list">
+                    <li><a href="#home" class="active">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                
+                <!-- Theme Switch Toggle -->
+                <button class="theme-toggle" id="theme-toggle-btn" aria-label="Toggle Theme">
+                    <i class="fas fa-moon"></i>
+                    <i class="fas fa-sun"></i>
+                </button>
+                
+                <div class="menu-icon" id="menu-icon-btn">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <!-- Particles Backdrop -->
+        <div id="particles-js"></div>
+        
+        <div class="container hero-grid">
+            <div class="hero-left">
+                <span class="tagline">Building future at NIAT, Pune</span>
+                <h1>Hi, I'm <span class="highlight">Manicka Vinayagam</span> <br> <span class="auto-type"></span></h1>
+                <p class="desc">A computer science student and technology developer dedicated to writing clean code, building responsive user interfaces, and studying AI/ML.</p>
+                <div class="buttons">
+                    <a href="img/my_resume_1.pdf" class="btn primary" download>
+                        <i class="fas fa-download"></i> Download CV
+                    </a>
+                    <a href="#contact" class="btn outline">
+                        <i class="fas fa-paper-plane"></i> Let's Chat
+                    </a>
+                </div>
+            </div>
+            
+            <div class="hero-right">
+                <!-- Interactive Terminal Simulator -->
+                <div class="terminal" data-tilt>
+                    <div class="terminal-header">
+                        <div class="terminal-buttons">
+                            <div class="terminal-button close"></div>
+                            <div class="terminal-button minimize"></div>
+                            <div class="terminal-button maximize"></div>
+                        </div>
+                        <div class="terminal-title">guest@manick.dev: ~</div>
+                    </div>
+                    <div class="terminal-body" id="terminal-body">
+                        <div class="terminal-welcome">
+                            Welcome to Manick.Dev CLI! [Version 1.0.0]<br>
+                            Type <span style="color: var(--text-primary); font-weight: 600;">help</span> to see a list of available commands.
+                        </div>
+                        <div class="terminal-history" id="terminal-history"></div>
+                        <div class="terminal-line">
+                            <span class="terminal-prompt">guest@manick.dev:~$</span>
+                            <div class="terminal-input-container">
+                                <input type="text" class="terminal-input" id="terminal-input" autocomplete="off" spellcheck="false" placeholder="...">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <div class="container">
+            <h2 class="section-title"><span class="code-bracket">&lt;</span>About Me <span class="code-bracket">/&gt;</span></h2>
+            <div class="about-grid">
+                <div class="about-img-container" data-tilt>
+                    <img src="img/Manickavinayagam.jpg" alt="Manicka Vinayagam">
+                </div>
+                <div class="about-content">
+                    <span class="about-subtitle">Intro</span>
+                    <h3>Evolving and building modern solutions</h3>
+                    <p>
+                        I am Manicka Vinayagam from Tamil Nadu, currently training at the NxtWave Institute of Advanced Technologies (NIAT) in Pune, while pursuing my Bachelor's degree at Ajeenkya D Y Patil University, Pune. I am highly motivated by emerging technology, software construction, and artificial intelligence.
+                    </p>
+                    <p>
+                        My objective is to blend solid programming architecture with clean, interactive, and optimized user layouts. Outside the IDE, I love playing outdoor sports, tracking web innovations, and enjoying quality movies or series.
+                    </p>
+                    <div class="about-quote">
+                        "The future belongs to those who invent it, not those who wait for it."
+                    </div>
+                    
+                    <div class="about-details-grid">
+                        <div class="about-detail-item"><strong>Name:</strong> Manicka Vinayagam V</div>
+                        <div class="about-detail-item"><strong>Date of Birth:</strong> Jan 14, 2008</div>
+                        <div class="about-detail-item"><strong>Address:</strong> Pune, MH, India</div>
+                        <div class="about-detail-item"><strong>Email:</strong> manickavinayagam4@gmail.com</div>
+                    </div>
+                    
+                    <div class="interests-container">
+                        <h4>Interests & Hobbies</h4>
+                        <div class="interests-tags">
+                            <span><i class="fas fa-code"></i> Coding</span>
+                            <span><i class="fas fa-brain"></i> AI & ML</span>
+                            <span><i class="fas fa-futbol"></i> Sports</span>
+                            <span><i class="fas fa-film"></i> Series & Movies</span>
+                            <span><i class="fas fa-lightbulb"></i> Continuous Learning</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <div class="container">
+            <h2 class="section-title"><span class="code-bracket">&lt;</span>My Skills <span class="code-bracket">/&gt;</span></h2>
+            <div class="skills-grid">
+                <div class="skill-card" data-tilt>
+                    <i class="fab fa-html5" style="font-size: 3rem; margin-bottom: 15px; display: block; color: var(--text-primary);"></i>
+                    <h4>HTML5</h4>
+                </div>
+                <div class="skill-card" data-tilt>
+                    <i class="fab fa-css3-alt" style="font-size: 3rem; margin-bottom: 15px; display: block; color: var(--text-primary);"></i>
+                    <h4>CSS3</h4>
+                </div>
+                <div class="skill-card" data-tilt>
+                    <i class="fab fa-js" style="font-size: 3rem; margin-bottom: 15px; display: block; color: var(--text-primary);"></i>
+                    <h4>JavaScript</h4>
+                </div>
+                <div class="skill-card" data-tilt>
+                    <i class="fab fa-python" style="font-size: 3rem; margin-bottom: 15px; display: block; color: var(--text-primary);"></i>
+                    <h4>Python</h4>
+                </div>
+                <div class="skill-card" data-tilt>
+                    <i class="fas fa-database" style="font-size: 3rem; margin-bottom: 15px; display: block; color: var(--text-primary);"></i>
+                    <h4>MySQL</h4>
+                </div>
+                <div class="skill-card" data-tilt>
+                    <div class="cpp-icon" style="font-family: var(--font-heading); font-size: 2.2rem; font-weight: 700; height: 50px; margin-bottom: 15px; display: flex; align-items: center; justify-content: center; color: var(--text-primary);">C++</div>
+                    <h4>C++</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <div class="container">
+            <h2 class="section-title"><span class="code-bracket">&lt;</span>My Projects <span class="code-bracket">/&gt;</span></h2>
+            
+            <!-- Category Filter Tabs -->
+            <div class="projects-filter">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="web">Web Design</button>
+                <button class="filter-btn" data-filter="logic">Backend & Logic</button>
+            </div>
+            
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <div class="project-card" data-category="web">
+                    <div class="project-img-wrapper">
+                        <img src="img/mvtrendz.png" alt="Fashion Shopping Website">
+                    </div>
+                    <div class="project-info">
+                        <div class="project-tags">
+                            <span class="project-tag">HTML</span>
+                            <span class="project-tag">CSS</span>
+                        </div>
+                        <h3>Fashion Shopping Website</h3>
+                        <p>A sleek, modern vehicle of commerce for clothing items, displaying a streamlined front-end workflow and responsive aesthetics.</p>
+                        <a href="https://mvtechnology.neocities.org/MVtrendz/" target="_blank" class="project-link">
+                            View Project <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Project 2 -->
+                <div class="project-card" data-category="web">
+                    <div class="project-img-wrapper">
+                        <img src="img/mvkart.png" alt="E-commerce Website">
+                    </div>
+                    <div class="project-info">
+                        <div class="project-tags">
+                            <span class="project-tag">HTML</span>
+                            <span class="project-tag">CSS</span>
+                        </div>
+                        <h3>MVKart E-commerce</h3>
+                        <p>Fully styled web store highlighting dynamic interactive listings, product grid layouts, and polished responsive layouts.</p>
+                        <a href="https://mv-kart.vercel.app/" target="_blank" class="project-link">
+                            View Project <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Project 3 -->
+                <div class="project-card" data-category="logic">
+                    <div class="project-img-wrapper">
+                        <img src="img/Python and sql.png" alt="UPSC Registration">
+                    </div>
+                    <div class="project-info">
+                        <div class="project-tags">
+                            <span class="project-tag">Python</span>
+                            <span class="project-tag">MySQL</span>
+                        </div>
+                        <h3>UPSC Registration CLI</h3>
+                        <p>A full integration registration logic combining backend Python workflows with direct relational database operations via SQL.</p>
+                        <a href="https://github.com/Manickam-04/UPSC-Registration/blob/main/UPSCregistration%20my%20project.py" target="_blank" class="project-link">
+                            View Script <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Project 4 -->
+                <div class="project-card" data-category="web">
+                    <div class="project-img-wrapper">
+                        <img src="img/mvmotors.png" alt="Modern Vehicle-MV EV">
+                    </div>
+                    <div class="project-info">
+                        <div class="project-tags">
+                            <span class="project-tag">HTML</span>
+                            <span class="project-tag">CSS</span>
+                        </div>
+                        <h3>MV EV Motors</h3>
+                        <p>A beautifully structured landing page built for modern electric vehicles, outlining technical specifications and clean galleries.</p>
+                        <a href="https://mvtechnology.neocities.org/Modern%20vehicle-MV/" target="_blank" class="project-link">
+                            View Project <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Project 5 -->
+                <div class="project-card" data-category="web">
+                    <div class="project-img-wrapper">
+                        <img src="img/updated.png" alt="NSGC President website">
+                    </div>
+                    <div class="project-info">
+                        <div class="project-tags">
+                            <span class="project-tag">HTML</span>
+                            <span class="project-tag">CSS</span>
+                            <span class="project-tag">JavaScript</span>
+                        </div>
+                        <h3>NSGC President Website</h3>
+                        <p>A fully customized administrative and representational platform developed for student government presidency with integrated navigation.</p>
+                        <a href="https://nsgcpresident.niat.tech/" target="_blank" class="project-link">
+                            View Project <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="container">
+            <h2 class="section-title"><span class="code-bracket">&lt;</span>Contact Me <span class="code-bracket">/&gt;</span></h2>
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <h3>Let's collaborate on code</h3>
+                    <p>Have an interesting project, internship opportunity, or just want to chat about engineering? Drop me a message, and I'll get back to you within 24 hours.</p>
+                    
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+                            <div class="contact-text">
+                                <h5>Email</h5>
+                                <p><a href="mailto:manickavinayagam4@gmail.com">manickavinayagam4@gmail.com</a></p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon"><i class="fas fa-phone"></i></div>
+                            <div class="contact-text">
+                                <h5>Phone</h5>
+                                <p><a href="tel:+917904433743">+91 7904433743</a></p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+                            <div class="contact-text">
+                                <h5>Location</h5>
+                                <p>Pune, Maharashtra, India</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <form class="contact-form" id="contact-form" action="https://formspree.io/f/mgoowweb" method="POST">
+                    <input type="hidden" name="_subject" value="New submission from Portfolio Website">
+                    
+                    <div class="form-group">
+                        <input type="text" id="name" name="name" required autocomplete="name">
+                        <label for="name">Your Name</label>
+                    </div>
+                    
+                    <div class="form-group">
+                        <input type="email" id="email" name="email" required autocomplete="email">
+                        <label for="email">Your Email</label>
+                    </div>
+                    
+                    <div class="form-group">
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                        <label for="message">Your Message</label>
+                    </div>
+                    
+                    <button type="submit" class="btn primary">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <h3>Manick.Dev</h3>
+            <p>Shaping my future at NxtWave Institute of Advanced Technologies, Pune ✨</p>
+            
+            <div class="social-icons">
+                <a href="https://github.com/Manickam-04" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/manickavinayagamv04/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                <a href="https://www.instagram.com/manicka_vinayagam_33/" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            </div>
+            
+            <p class="copyright">© 2026 Manicka Vinayagam. All rights reserved.</p>
+            <p class="copyright" style="font-size: 0.75rem; margin-top: -15px;">Built with HTML, CSS, & JS. Hand-crafted in black & white.</p>
+        </div>
+    </footer>
+
+    <!-- Toast Notification Container -->
+    <div class="toast-container" id="toast-container">
+        <div class="toast" id="success-toast">
+            <i class="fas fa-check-circle toast-icon"></i>
+            <div class="toast-content">
+                <span class="toast-title">Message Sent</span>
+                <span class="toast-desc">Thank you! I will get back to you shortly.</span>
+            </div>
+            <button class="toast-close" id="toast-close-btn" aria-label="Close Toast">&times;</button>
+        </div>
+    </div>
+
+    <!-- Libraries & Vendor Scripts -->
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.0/vanilla-tilt.min.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!-- Main Logic Script -->
+    <script>
+        /* ==========================================================================
+           1. THEME SWITCHING (DARK / LIGHT)
+           ========================================================================== */
+        const themeToggleBtn = document.getElementById('theme-toggle-btn');
+        const htmlEl = document.documentElement;
+
+        // Load theme from store
+        const savedTheme = localStorage.getItem('portfolio-theme') || 'dark';
+        htmlEl.setAttribute('data-theme', savedTheme);
+
+        themeToggleBtn.addEventListener('click', () => {
+            const currentTheme = htmlEl.getAttribute('data-theme');
+            const newTheme = currentTheme === 'light' ? 'dark' : 'light';
+            htmlEl.setAttribute('data-theme', newTheme);
+            localStorage.setItem('portfolio-theme', newTheme);
+        });
+
+        /* ==========================================================================
+           2. MOBILE NAVBAR & MENU TOGGLE
+           ========================================================================== */
+        const menuIconBtn = document.getElementById('menu-icon-btn');
+        const navLinksList = document.getElementById('nav-links-list');
+
+        menuIconBtn.addEventListener('click', () => {
+            navLinksList.classList.toggle('active');
+        });
+
+        // Close when link clicked
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', () => {
+                navLinksList.classList.remove('active');
+            });
+        });
+
+        /* ==========================================================================
+           3. NAVBAR ACTIVE SCROLL HIGHLIGHT
+           ========================================================================== */
+        const sections = document.querySelectorAll('section');
+        const navLinks = document.querySelectorAll('.nav-links a');
+
+        window.addEventListener('scroll', () => {
+            let current = 'home';
+            const scrollPosition = window.scrollY + 120; // height offset
+
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.clientHeight;
+                if (scrollPosition >= sectionTop && scrollPosition < sectionTop + sectionHeight) {
+                    current = section.getAttribute('id');
+                }
+            });
+
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href') === `#${current}`) {
+                    link.classList.add('active');
+                }
+            });
+
+            // Make navbar tighter on scroll
+            const navbar = document.querySelector('.navbar');
+            if (window.scrollY > 50) {
+                navbar.style.padding = '12px 0';
+            } else {
+                navbar.style.padding = '20px 0';
+            }
+        });
+
+        /* ==========================================================================
+           4. TYPED.JS CONFIGURATION
+           ========================================================================== */
+        var typed = new Typed('.auto-type', {
+            strings: [
+                "Computer Science Student",
+                "AI ML Enthusiast",
+                "Web Developer",
+                "NIAT Student"
+            ],
+            typeSpeed: 60,
+            backSpeed: 50,
+            loop: true
+        });
+
+        /* ==========================================================================
+           5. INTERACTIVE TERMINAL CLI LOGIC
+           ========================================================================== */
+        const terminalBody = document.getElementById('terminal-body');
+        const terminalHistory = document.getElementById('terminal-history');
+        const terminalInput = document.getElementById('terminal-input');
+
+        // Focus terminal input when terminal container clicked
+        document.querySelector('.terminal').addEventListener('click', () => {
+            terminalInput.focus();
+        });
+
+        terminalInput.addEventListener('keydown', (e) => {
+            if (e.key === 'Enter') {
+                const cmdText = terminalInput.value.trim();
+                terminalInput.value = '';
+                if (cmdText) {
+                    executeCommand(cmdText);
+                }
+            }
+        });
+
+        function executeCommand(cmd) {
+            // Append typed line
+            const userLine = document.createElement('div');
+            userLine.className = 'terminal-line';
+            userLine.innerHTML = `<span class="terminal-prompt">guest@manick.dev:~$</span><div class="terminal-response">${escapeHtml(cmd)}</div>`;
+            terminalHistory.appendChild(userLine);
+
+            const parsedCmd = cmd.toLowerCase().trim();
+            const responseLine = document.createElement('div');
+            responseLine.className = 'terminal-response';
+
+            let response = '';
+
+            switch (parsedCmd) {
+                case 'help':
+                    response = `Available Commands:
+  <span style="color: #ffffff;">about</span>    - Read biographical developer info
+  <span style="color: #ffffff;">skills</span>   - List language and systems capabilities
+  <span style="color: #ffffff;">projects</span> - Read featured design projects summaries
+  <span style="color: #ffffff;">contact</span>  - View coordinates for direct contact
+  <span style="color: #ffffff;">clear</span>    - Flush terminal console command line
+  <span style="color: #ffffff;">help</span>     - Display command guides menu`;
+                    break;
+                case 'about':
+                    response = `Manicka Vinayagam V
+Computer Science Student at ADYPU & NIAT, Pune.
+Specializing in coding, web construction, and intelligence workflows.
+Current Address: Pune, Maharashtra, India.
+Quote: "The future belongs to those who invent it."`;
+                    break;
+                case 'skills':
+                    response = `Technical Inventory:
+  • Coding      : HTML5, CSS3, JavaScript, Python, C++
+  • Databases   : MySQL Relational Engine
+  • Systems     : Git Versioning Control, Command Shell`;
+                    break;
+                case 'projects':
+                    response = `Featured Projects:
+  1. Fashion Shopping Website (HTML, CSS)
+  2. MVKart E-commerce (HTML, CSS)
+  3. UPSC Registration Portal (Python, MySQL Relational)
+  4. MV EV Motors landing page (HTML, CSS)
+  5. NSGC President Website (HTML, CSS, JS)
+Scroll down to the Projects section to see details and live demo links!`;
+                    break;
+                case 'contact':
+                    response = `Coordinates for Communication:
+  • Email       : <a href="mailto:manickavinayagam4@gmail.com" style="color: #ffffff;">manickavinayagam4@gmail.com</a>
+  • Phone       : +91 7904433743
+  • LinkedIn    : <a href="https://www.linkedin.com/in/manickavinayagamv04/" target="_blank" style="color: #ffffff;">linkedin.com/in/manickavinayagamv04/</a>
+  • GitHub      : <a href="https://github.com/Manickam-04" target="_blank" style="color: #ffffff;">github.com/Manickam-04</a>`;
+                    break;
+                case 'clear':
+                    terminalHistory.innerHTML = '';
+                    return;
+                default:
+                    response = `Command '${escapeHtml(parsedCmd)}' not resolved. Type 'help' to see active directives list.`;
+            }
+
+            responseLine.innerHTML = response;
+            terminalHistory.appendChild(responseLine);
+            terminalBody.scrollTop = terminalBody.scrollHeight;
+        }
+
+        function escapeHtml(text) {
+            return text.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
+        }
+
+        /* ==========================================================================
+           6. PROJECT CATEGORY FILTERING
+           ========================================================================== */
+        const filterBtns = document.querySelectorAll('.filter-btn');
+        const projectCards = document.querySelectorAll('.project-card');
+
+        filterBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                filterBtns.forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+
+                const filter = btn.getAttribute('data-filter');
+
+                projectCards.forEach(card => {
+                    const category = card.getAttribute('data-category');
+                    if (filter === 'all' || category === filter) {
+                        card.style.display = 'flex';
+                        setTimeout(() => {
+                            card.style.opacity = '1';
+                            card.style.transform = 'translateY(0)';
+                        }, 50);
+                    } else {
+                        card.style.opacity = '0';
+                        card.style.transform = 'translateY(10px)';
+                        setTimeout(() => {
+                            card.style.display = 'none';
+                        }, 300);
+                    }
+                });
+            });
+        });
+
+        /* ==========================================================================
+           7. PARTICLES.JS INITIALIZATION (MONOCHROMATIC STYLING)
+           ========================================================================== */
+        particlesJS("particles-js", {
+            "particles": {
+                "number": { "value": 60, "density": { "enable": true, "value_area": 800 } },
+                "color": { "value": "#888888" },
+                "shape": {
+                    "type": "circle",
+                    "stroke": { "width": 0, "color": "#000000" },
+                },
+                "opacity": {
+                    "value": 0.2,
+                    "random": true,
+                },
+                "size": {
+                    "value": 2.5,
+                    "random": true,
+                },
+                "line_linked": {
+                    "enable": true,
+                    "distance": 140,
+                    "color": "#888888",
+                    "opacity": 0.12,
+                    "width": 1
+                },
+                "move": {
+                    "enable": true,
+                    "speed": 1.5,
+                    "direction": "none",
+                    "random": true,
+                    "straight": false,
+                    "out_mode": "out",
+                    "bounce": false,
+                }
+            },
+            "interactivity": {
+                "detect_on": "canvas",
+                "events": {
+                    "onhover": { "enable": true, "mode": "grab" },
+                    "onclick": { "enable": true, "mode": "push" },
+                    "resize": true
+                },
+                "modes": {
+                    "grab": { "distance": 150, "line_linked": { "opacity": 0.3 } },
+                    "push": { "particles_nb": 3 }
+                }
+            },
+            "retina_detect": true
+        });
+
+        /* ==========================================================================
+           8. VANILLA TILT & SCROLLREVEAL ANIMATIONS
+           ========================================================================== */
+        // Vanilla Tilt Settings
+        VanillaTilt.init(document.querySelectorAll(".skill-card, .project-card, .terminal, .about-img-container"), {
+            max: 8,
+            speed: 500,
+            glare: true,
+            "max-glare": 0.12,
+            scale: 1.01
+        });
+
+        // ScrollReveal Setup
+        const sr = ScrollReveal({
+            origin: 'bottom',
+            distance: '30px',
+            duration: 1000,
+            delay: 150,
+            reset: false
+        });
+
+        sr.reveal('.hero-left', { delay: 200, origin: 'left' });
+        sr.reveal('.hero-right', { delay: 300, origin: 'right' });
+        sr.reveal('#about .section-title');
+        sr.reveal('.about-img-container', { delay: 200, origin: 'left' });
+        sr.reveal('.about-content', { delay: 350, origin: 'right' });
+        sr.reveal('#skills .section-title');
+        sr.reveal('.skill-card', { interval: 100 });
+        sr.reveal('#projects .section-title');
+        sr.reveal('.projects-filter', { delay: 200 });
+        sr.reveal('.project-card', { interval: 100 });
+        sr.reveal('#contact .section-title');
+        sr.reveal('.contact-info', { delay: 200, origin: 'left' });
+        sr.reveal('.contact-form', { delay: 300, origin: 'right' });
+
+        /* ==========================================================================
+           9. FORM DRAFT PERSISTENCE & TOAST NOTIFICATION
+           ========================================================================== */
+        const contactForm = document.getElementById('contact-form');
+        const formName = document.getElementById('name');
+        const formEmail = document.getElementById('email');
+        const formMessage = document.getElementById('message');
+        const successToast = document.getElementById('success-toast');
+        const toastCloseBtn = document.getElementById('toast-close-btn');
+
+        // Restore draft from localStorage (for normal reloads)
+        function restoreFormDraft() {
+            const draft = JSON.parse(localStorage.getItem('contact-form-draft'));
+            if (draft) {
+                if (draft.name) formName.value = draft.name;
+                if (draft.email) formEmail.value = draft.email;
+                if (draft.message) formMessage.value = draft.message;
+            }
+        }
+
+        // Save current form values to localStorage
+        function saveFormDraft() {
+            const draft = {
+                name: formName.value,
+                email: formEmail.value,
+                message: formMessage.value
+            };
+            localStorage.setItem('contact-form-draft', JSON.stringify(draft));
+        }
+
+        // Add input listeners to auto-save draft as user types
+        [formName, formEmail, formMessage].forEach(input => {
+            input.addEventListener('input', saveFormDraft);
+        });
+
+        // Set submission flag when form is submitted
+        contactForm.addEventListener('submit', () => {
+            localStorage.setItem('formSubmitted', 'true');
+        });
+
+        // Check if returning from a successful submission using pageshow
+        window.addEventListener('pageshow', () => {
+            if (localStorage.getItem('formSubmitted') === 'true') {
+                // Clear state & inputs
+                localStorage.removeItem('contact-form-draft');
+                localStorage.removeItem('formSubmitted');
+                formName.value = '';
+                formEmail.value = '';
+                formMessage.value = '';
+
+                // Show success toast
+                successToast.classList.add('show');
+                setTimeout(() => {
+                    successToast.classList.remove('show');
+                }, 5000);
+            } else {
+                restoreFormDraft();
+            }
+        });
+
+        // Close toast on click
+        toastCloseBtn.addEventListener('click', () => {
+            successToast.classList.remove('show');
+        });
+    </script>
+</body>
+
+</html>
